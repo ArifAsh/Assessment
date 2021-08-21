@@ -1,0 +1,123 @@
+
+
+
+.slideshow, .wrap{
+    position: relative;
+    margin: 0 auto;
+    width:100%;
+    height: 100vh;
+    overflow:hidden;
+
+    
+  }
+ .wrap span{
+     color: white;
+     position: relative;
+     top:32%;
+    
+
+     
+     
+ }
+ .wrap h1{
+     font-size:3.3rem;
+     margin-bottom:10px;
+     font-weight: lighter;
+     
+
+ }
+ .wrap h4{
+     font-size:1.8rem;
+     font-weight: lighter;
+     margin: 0;
+     padding:0;
+     width:100%;
+     text-align: center;
+     margin:0 auto;
+    
+ }
+
+  .slides {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+  }
+
+  .slides0{
+      background-image: url("../../Images/Image 1.png");
+
+  }
+  .slides1{
+    background-image: url("../../Images/Image 2.png");
+
+}
+.slides2{
+    background-image: url("../../Images/Image 3.png");
+
+}
+.slide-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.btn-mix-noborder{
+    /* background-color:red; */
+    padding: 15px 40px;
+    background-image: linear-gradient(to left, violet, indigo, blue);
+    /* -webkit-background-clip: text; */
+    border-radius: 9999em 9999em 9999em 9999em;
+    color:white;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+  .dot {
+    cursor: pointer;
+    
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
+    border-radius: 50%;
+    border: solid 1px white;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 10;
+   
+
+  }
+  .select{
+    left:50%;
+    bottom :5px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+    
+  }
+  
+  .active,  .dot:hover {
+    background-color:white;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
